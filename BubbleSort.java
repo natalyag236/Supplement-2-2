@@ -2,7 +2,15 @@ import java.util.List;
 
 public class BubbleSort {
 
-  static void bubbleSort(List<Integer> list) {
+    /**
+     * Sorts a list of integers using the Bubble Sort algorithm.
+     * The method repeatedly steps through the list, compares adjacent items,
+     * and swaps them if they are in the wrong order. The process is repeated
+     * until the list is sorted.
+     *
+     * @param list A list of integers to be sorted.
+     */
+    public static void bubbleSort(List<Integer> list) {
         if (list == null || list.size() <= 1) {
             return;
         }
@@ -23,4 +31,3 @@ public class BubbleSort {
         } while (swapped);
     }
 }
-
